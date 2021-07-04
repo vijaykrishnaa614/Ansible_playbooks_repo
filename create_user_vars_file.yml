@@ -1,0 +1,12 @@
+---
+- name: This playbook creates user without opening playbook but using external file
+  hosts: webservers
+  become: true
+
+  vars_files:
+  - user.yml
+
+  tasks:
+          - name: Creating a user {{user}}
+            user:
+                    name: "{{user}}"

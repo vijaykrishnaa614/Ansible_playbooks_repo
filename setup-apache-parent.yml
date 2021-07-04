@@ -1,0 +1,8 @@
+---
+- name: This playbook installs web package
+  hosts: all
+  become: true
+
+  roles:
+  - setup-apache-role
+

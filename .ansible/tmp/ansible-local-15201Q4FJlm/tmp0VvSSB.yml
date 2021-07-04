@@ -1,0 +1,3 @@
+---
+- name: This playbook is encryptes while creating
+  hosts:  
